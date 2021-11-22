@@ -1,0 +1,16 @@
+[
+  {
+    "ContactId": 1,
+    "Name": "James Bond",
+    "Phone": "604-555-5555",
+    "Email": "007@mi6.gov.uk",
+    "Age": 40
+  },
+  {
+    "ContactId": 2,
+    "Name": "Jason Bourne",
+    "Phone": "604-555-5555",
+    "Email": "bourne@threadstone.com",
+    "Age": 30
+  }
+]

@@ -1,0 +1,8 @@
+﻿<Application x:Class="Postman.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Postman">
+    <Application.Resources>
+        <ResourceDictionary Source="Resources\ApplicationStyle.xaml" />
+    </Application.Resources>
+</Application>

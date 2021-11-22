@@ -1,0 +1,58 @@
+[
+  {
+    "reference_id": "166749",
+    "refund_on": "2021-05-13T23:30:56.0000000",
+    "amount": 24.99,
+    "note": "Size was too small, but the customer did not want to exchange.",
+    "taxable": true,
+    "tax_inclusive": false,
+    "refund_attributes": [
+      {
+        "Name": "ReturnType",
+        "value": "RP"
+      }
+    ]
+  },
+  {
+    "reference_id": "166751",
+    "refund_on": "2021-05-13T23:50:56.0000000",
+    "amount": 24.99,
+    "note": "Size was too small, but the customer did not want to exchange.",
+    "taxable": true,
+    "tax_inclusive": false,
+    "refund_attributes": [
+      {
+        "Name": "ReturnType",
+        "value": "RP"
+      }
+    ]
+  },
+  {
+    "reference_id": "166752",
+    "refund_on": "2021-05-13T23:50:56.0000000",
+    "amount": 24.99,
+    "note": "Size was too small, but the customer did not want to exchange.",
+    "taxable": true,
+    "tax_inclusive": false,
+    "refund_attributes": [
+      {
+        "Name": "ReturnType",
+        "value": "RP"
+      }
+    ]
+  },
+  {
+    "reference_id": "166753",
+    "refund_on": "2021-05-13T23:50:56.0000000",
+    "amount": 24.99,
+    "note": "Size was too small, but the customer did not want to exchange.",
+    "taxable": true,
+    "tax_inclusive": false,
+    "refund_attributes": [
+      {
+        "Name": "ReturnType",
+        "value": "RP"
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Postman", "Postman\Postman.csproj", "{7C6DE5CF-F925-49F1-ADEE-CAC8068131A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostmanApi", "PostmanApi\PostmanApi.csproj", "{DE39A476-7D2C-46CE-8592-58527E36D55A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Postman.Tests", "Postman.Tests\Postman.Tests.csproj", "{7B0FCC8F-6997-4AF5-A858-A62AEB51C514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postman.WorkerService", "Postman.WorkerService\Postman.WorkerService.csproj", "{FE19FC07-E148-4523-ADBD-FAEE0442B59D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C6DE5CF-F925-49F1-ADEE-CAC8068131A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C6DE5CF-F925-49F1-ADEE-CAC8068131A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C6DE5CF-F925-49F1-ADEE-CAC8068131A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C6DE5CF-F925-49F1-ADEE-CAC8068131A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE39A476-7D2C-46CE-8592-58527E36D55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE39A476-7D2C-46CE-8592-58527E36D55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE39A476-7D2C-46CE-8592-58527E36D55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE39A476-7D2C-46CE-8592-58527E36D55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B0FCC8F-6997-4AF5-A858-A62AEB51C514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0FCC8F-6997-4AF5-A858-A62AEB51C514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0FCC8F-6997-4AF5-A858-A62AEB51C514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0FCC8F-6997-4AF5-A858-A62AEB51C514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE19FC07-E148-4523-ADBD-FAEE0442B59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE19FC07-E148-4523-ADBD-FAEE0442B59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE19FC07-E148-4523-ADBD-FAEE0442B59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE19FC07-E148-4523-ADBD-FAEE0442B59D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68672ECE-9766-4F4A-B462-E4E6618A9F30}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,103 @@
+﻿<RibbonWindow x:Class="Postman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Postman"
+        mc:Ignorable="d"
+        Icon="/Images/Contact.png" WindowState="Maximized" 
+        Title="Postman" Height="450" Width="800" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Ribbon x:Name="Ribbon" Title="" Grid.Row="0" >
+            <Ribbon.HelpPaneContent>
+                <RibbonButton Label="Help" Visibility="Collapsed"/>
+            </Ribbon.HelpPaneContent>
+            <Ribbon.QuickAccessToolBar>
+                <RibbonQuickAccessToolBar Visibility="Collapsed">
+                    <RibbonButton x:Name="QATButton1" 
+                                  Label="1" />
+                    <RibbonButton x:Name="QATButton2" 
+                                  Label="2" />
+                </RibbonQuickAccessToolBar>
+            </Ribbon.QuickAccessToolBar>
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu Visibility="Collapsed">
+                    <RibbonApplicationMenuItem Header="Hello _Ribbon"
+                                                      x:Name="MenuItem1"
+                                                      />
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+            <RibbonTab x:Name="HomeTab" 
+                              Header="Send">
+                <RibbonGroup x:Name="SettingsGroup" 
+                                    Header="">
+                    <RibbonTextBox Name="UrlRibbonTextBox" Label="URL: " Text="{Binding Url, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" TextBoxWidth="860"
+                                   KeyTip="U" />
+                    <RibbonComboBox Label="Method: " 
+                                    SelectionBoxWidth="50"
+                                    HorizontalAlignment="Left"
+                                    IsEditable="False" >
+                        <RibbonGallery SelectedValue="Post"
+                                              SelectedValuePath="Content"
+                                              MaxColumnCount="1">
+                            <RibbonGalleryCategory >
+                                <RibbonGalleryItem Content="Get"/>
+                                <RibbonGalleryItem Content="Post"/>
+                                <RibbonGalleryItem Content="Put"/>
+                                <RibbonGalleryItem Content="Patch"/>
+                                <RibbonGalleryItem Content="Delete"/>
+                            </RibbonGalleryCategory>
+                        </RibbonGallery>
+                    </RibbonComboBox>
+                    <RibbonCheckBox Label="Use Token" IsChecked="{Binding UseToken, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+                    <RibbonCheckBox Label="Basic" IsChecked="{Binding UseBasic, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+                    <RibbonCheckBox Label="Async" IsChecked="{Binding Async, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+                    <RibbonTextBox Label="Count: " Text="{Binding Count, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" TextBoxWidth="60" />
+                </RibbonGroup>
+                <RibbonGroup x:Name="SendGroup" 
+                                    Header="">
+                    <RibbonButton x:Name="SendAsyncButton"
+                                  Label="Send" Command="{Binding SendAsyncCommand}" LargeImageSource="Images\mail2.png"/>
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="Basic Auth">
+                <RibbonGroup x:Name="BasicAuthGroup" 
+                             Header="">
+                    <RibbonTextBox Label="Auth URL: " Text="{Binding AuthUrl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+                    <RibbonTextBox Label="User Name: " Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+                    <PasswordBox Width="60" ></PasswordBox>
+                    <RibbonButton x:Name="AuthAsyncButton"
+                                  Label="Auth" Command="{Binding AuthAsyncCommand}" LargeImageSource="Images\mail2.png"/>
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+
+        <TabControl Grid.Row="1" SelectedIndex="0">
+            <TabItem Header="Send">
+                <TextBox VerticalAlignment="Stretch" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" 
+                         SpellCheck.IsEnabled="False" Language="en-US" Text="{Binding Request, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" >
+                </TextBox>
+            </TabItem>
+            <TabItem Header="Token">
+                <TextBox VerticalAlignment="Stretch" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" 
+                         SpellCheck.IsEnabled="True" Language="en-US" Text="{Binding Token, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                </TextBox>
+            </TabItem>
+            <TabItem Header="Receive">
+                <TextBox VerticalAlignment="Stretch" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" 
+                         SpellCheck.IsEnabled="True" Language="en-US" Text="{Binding Response, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                </TextBox>
+            </TabItem>
+        </TabControl>
+        <StatusBar Grid.Row="2">
+            <StatusBarItem>
+                <TextBlock Name="StatusBarText" Text="{Binding Status}"></TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</RibbonWindow>

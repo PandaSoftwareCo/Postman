@@ -1,0 +1,105 @@
+[
+  {
+    "_orderbot_account_id": null,
+    "order_date": "2021-08-17T22:23:26.861Z",
+    "ship_date": "2021-08-17T22:23:26.861Z",
+    "_orderbot_customer_id": 10,
+    "_reference_customer_id": "98000234",
+    "_reference_order_id": "aabb15998966",
+    "_customer_po": "12345678",
+    "order_status": "unshipped",
+    "order_notes": "Stas is testing",
+    "internal_notes": "Stas is testing - internal",
+    "bill_third_party": false,
+    "distribution_center_id": 1,
+    "account_group_id": 18,
+    "order_guide_id": 1778,
+    "insure_packages": false,
+    "shipping_code": "A1",
+    "email_confirmation_address": "swasserman@orderbot.com",
+    "subtotal": 15.00,
+    "shipping": 0.0,
+    "order_discount": 0,
+    "order_total": 15.75,
+    "shipping_tax": [
+      {
+        "tax_name": "TAX",
+        "tax_rate": 0.00,
+        "amount": 0.00
+      }
+    ],
+    "shipping_address": {
+      "store_name": "Stas API Testing Store 2021-08-17T22:23:26.861Z",
+      "first_name": "Stas C",
+      "last_name": "Testing C 2021-08-17T22:23:26.861Z",
+      "address1": "1525 Robson St",
+      "address2": "#500 Kitchen",
+      "city": "Vancouver",
+      "state": "BC",
+      "postal_code": "V6G 1C3",
+      "country": "CA",
+      "phone_number": "+1 844-471-0783",
+      "email": "swasserman@orderbot.com"
+    },
+    "billing_address": {
+      "account_name": "Stas API Testing Account 2021-08-17T22:23:26.861Z",
+      "first_name": "Stas A",
+      "last_name": "Testing A",
+      "address1": "1525 Robson St",
+      "address2": "#500",
+      "city": "Vancouver",
+      "state": "BC",
+      "postal_code": "V6G 1C3",
+      "country": "CA",
+      "phone_number": "+1 844-471-0783",
+      "email": "swasserman@orderbot.com"
+    },
+    "payments": [
+      {
+        "payment_type": "visa",
+        "payment_date": "2021-08-17T22:23:26.861Z",
+        "amount_paid": 15.75,
+        "check_no": null,
+        "notes": null,
+        "credit_card_info": {
+          "transaction_id": "2239012792",
+          "authorization_code": "YT0VX3",
+          "last_four_digits": "0002",
+          "gateway_customer_profile_id": "36724516",
+          "gateway_customer_payment_profile_id": "33204462",
+          "pay_by_cim": true
+        }
+      }
+    ],
+    "order_lines": [
+      {
+        "line_number": 1,
+        "product_sku": "78974123",
+        "_custom_description": "Test Product",
+        "quantity": 1,
+        "price": 15.00,
+        "product_discount": 0,
+        "product_taxes": [
+          {
+            "tax_name": "TAX",
+            "tax_rate": 0.05,
+            "amount": 0.75
+          }
+        ]
+      }
+    ],
+    "_other_charges": [
+      {
+        "_other_charge_id": 60,
+        "_amount": 5,
+        "_other_charge_taxes": [
+          {
+            "_tax_name": "TAX",
+            "_tax_rate": 0.05,
+            "_amount": 0.15
+          }
+        ]
+      }
+    ]
+  }
+]
